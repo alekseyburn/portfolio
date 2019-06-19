@@ -1,0 +1,54 @@
+.page-header {
+  padding: $mobile-indent;
+
+  background-color: $black;
+}
+
+.page-header__link {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  border: 2px solid $white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    display: block;
+    width: 0;
+
+    background-color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 10px 0 rgba($white, 0.5);
+
+    transition: box-shadow 0.3s;
+  }
+
+  &:active {
+    color: $black;
+
+    &::after {
+      width: 100%;
+
+      transition: width 0.5s;
+    }
+  }
+}

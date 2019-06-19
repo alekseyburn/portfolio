@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <meta name="Description" content="Сайт-портфолио">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
   <title>Rage Портфолио</title>
 </head>
 <body>
   <header class="page-header">
     <a class="page-header__link" href="index.html">Сайт-портфолио</a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--nojs">
+      <button class="main-nav__toggle" type="button" aria-label="Отобразить/закрыть меню"></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a class="site-list__link" href="#about">О себе</a></li>
         <li class="site-list__item"><a class="site-list__link" href="#portfolio">Мои работы</a></li>
@@ -89,5 +93,6 @@
       </li>
     </ul>
   </footer>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
