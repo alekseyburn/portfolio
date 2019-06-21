@@ -1,0 +1,33 @@
+.contacts-list {
+  @include reset-list;
+}
+
+.contacts-list__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contacts-list__icon {
+  fill: $white;
+}
+
+.contacts-list__link {
+  text-align: center;
+  color: $blue;
+
+  &:hover,
+  &:focus {
+    color: $light-blue;
+  }
+
+  &:active {
+    color: $purple;
+  }
+}

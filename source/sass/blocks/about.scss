@@ -1,0 +1,44 @@
+.about__title {
+  margin-bottom: $mobile-indent;
+}
+
+.about__img {
+  display: block;
+  width: 150px;
+  margin: 0 auto 10px;
+
+  border-radius: 50%;
+}
+
+.about__name {
+  display: block;
+  margin-bottom: $mobile-indent;
+  padding: 0 15px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.about__text {
+  margin: 0 0 $mobile-indent;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.about__link {
+  color: $blue;
+
+  &:hover,
+  &:focus {
+    color: $light-blue;
+  }
+
+  &:active {
+    color: $purple;
+  }
+}

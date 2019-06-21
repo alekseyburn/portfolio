@@ -1,22 +1,13 @@
-.page-header {
-  padding: $mobile-indent;
-
-  background-color: $black;
-}
-
-.page-header__link {
+.button {
   position: relative;
   z-index: 1;
 
   display: block;
-  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 35px;
   text-align: center;
   color: $white;
-  text-transform: uppercase;
 
   border: 2px solid $white;
 
@@ -36,19 +27,20 @@
 
   &:hover,
   &:focus {
+    color: $black;
+
     outline: none;
-    box-shadow: 0 0 10px 0 rgba($white, 0.5);
 
     transition: box-shadow 0.3s;
-  }
-
-  &:active {
-    color: $black;
 
     &::after {
       width: 100%;
 
-      transition: width 0.5s;
+      transition: width 0.2s;
     }
+  }
+
+  &:active {
+    box-shadow: 0 0 10px 0 rgba($white, 0.5);
   }
 }

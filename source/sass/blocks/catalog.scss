@@ -1,0 +1,104 @@
+.catalog {
+  @include reset-list;
+}
+
+.catalog__item {
+  position: relative;
+
+  width: 100%;
+  min-height: 500px;
+  margin-bottom: $mobile-indent;
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  box-shadow: 5px -5px 0 0 $black, 110px -110px 0 -102px $white,
+  -5px 5px 0 0 $black, -110px 110px 0 -102px $white;
+
+  transition: background-position 7s;
+
+  &:hover,
+  &:focus {
+    background-position: center bottom;
+  }
+
+  &--artactive {
+    background-image: url("../img/bg-artactive@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-artactive@2x.jpg");
+    }
+  }
+
+  &--mishka {
+    background-image: url("../img/bg-mishka@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-mishka@2x.jpg");
+    }
+  }
+
+  &--blueasy {
+    background-image: url("../img/bg-blueasy@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-blueasy@2x.jpg");
+    }
+  }
+}
+
+.catalog__btn {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+
+  width: 100%;
+  padding: 10px 5px;
+
+  font: inherit;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  background-color: $black;
+  border: 2px solid $white;
+  cursor: pointer;
+}
+
+.catalog__info-wrapper {
+  display: none;
+  min-height: 500px;
+  padding: 15px 15px 45px;
+
+  background-color: rgba($black, 0.8);
+
+  &--open {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.catalog__name {
+  margin: 0 auto $mobile-indent;
+
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.catalog__info,
+.catalog__tech,
+.catalog__browsers {
+  width: 100%;
+  margin: 0 0 $mobile-indent;
+}
+
+.catalog__link {
+  flex-grow: 1;
+  width: auto;
+  margin-bottom: 5px;
+}
