@@ -1,18 +1,5 @@
 .site-list {
   @include reset-list;
-
-  position: relative;
-  left: -400px;
-
-  height: 0;
-  min-height: 0;
-  margin-right: -$mobile-indent;
-  overflow-y: hidden;
-
-  visibility: hidden;
-  opacity: 0;
-
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .site-list__link {
@@ -25,8 +12,6 @@
   font-size: 18px;
   line-height: 30px;
   color: $white;
-
-  border-bottom: 1px solid $white;
 
   transition: all 0.5s;
 
@@ -43,27 +28,125 @@
 
     background-color: $white;
   }
+}
 
-  &:hover,
-  &:focus {
-    padding-left: 50px;
+@media (max-width: $mobile-width-only) {
+  .site-list {
+    position: relative;
+    left: -400px;
 
-    text-shadow: 0 0 5px rgba($white, 1);
+    height: 0;
+    min-height: 0;
+    margin-right: -$mobile-indent;
+    overflow-y: hidden;
 
-    outline: none;
+    visibility: hidden;
+    opacity: 0;
 
-    transition: all 0.5s;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
-  &:active {
-    color: $black;
+  .site-list__link {
+    border-bottom: 1px solid $white;
 
-    transition: color 0.2s;
+    &:hover,
+    &:focus {
+      padding-left: 50px;
+
+      text-shadow: 0 0 5px rgba($white, 1);
+
+      outline: none;
+
+      transition: all 0.5s;
+    }
+
+    &:active {
+      color: $black;
+
+      transition: color 0.2s;
+
+      &::after {
+        width: 100%;
+
+        transition: width 0.5s;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .site-list__link {
+    padding: 5px 10px;
+
+    color: transparent;
 
     &::after {
-      width: 100%;
+      content: attr(data-cont);
 
-      transition: width 0.5s;
+      width: 100%;
+      padding: 5px 10px;
+
+      color: $white;
+
+      background-color: transparent;
+      transform: rotateX(90deg);
+      transform-origin: center top;
+
+      transition: transform 0.3s;
+    }
+
+    &::before {
+      content: attr(data-cont);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      padding: 5px 10px;
+
+      color: $white;
+
+      background-color: transparent;
+      transform: rotateX(0deg);
+      transform-origin: center bottom;
+
+      transition: transform 0.5s;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        z-index: 1;
+
+        text-shadow: 0 0 5px rgba($white, 1);
+
+        transform: rotateX(0deg);
+
+        transition: transform 0.5s;
+      }
+
+      &::before {
+        z-index: 1;
+
+        color: $white;
+
+        transform: rotateX(90deg);
+
+        transition: transform 0.3s;
+      }
+    }
+
+    &:active {
+      border-bottom: 2px solid $white;
+      transition: border-bottom 0ms;
     }
   }
 }

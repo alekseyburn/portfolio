@@ -12,8 +12,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  box-shadow: 5px -5px 0 0 $black, 110px -110px 0 -102px $white,
-  -5px 5px 0 0 $black, -110px 110px 0 -102px $white;
+  box-shadow: 5px -5px 0 0 $black, 110px -110px 0 -102px $white, -5px 5px 0 0 $black, -110px 110px 0 -102px $white;
 
   transition: background-position 7s;
 
@@ -101,4 +100,17 @@
   flex-grow: 1;
   width: auto;
   margin-bottom: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    flex-basis: 45%;
+    margin-bottom: $tablet-indent;
+  }
 }

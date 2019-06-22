@@ -22,3 +22,13 @@
     background-color: $white;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .section {
+    padding: 0 $tablet-indent $tablet-indent;
+  }
+
+  .section__title {
+    font-size: 35px;
+  }
+}

@@ -6,3 +6,9 @@
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
+@media (min-width: $tablet-width) {
+  .last-works__title {
+    margin-bottom: $tablet-indent;
+  }
+}

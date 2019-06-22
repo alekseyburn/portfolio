@@ -52,3 +52,17 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    align-items: flex-start;
+    padding: $tablet-indent;
+  }
+
+  .page-header__link {
+    flex-shrink: 0;
+    margin-bottom: 0;
+    padding: 0 10px;
+  }
+}

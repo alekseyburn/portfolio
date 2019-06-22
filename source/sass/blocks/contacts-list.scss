@@ -31,3 +31,21 @@
     color: $purple;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts-list__item {
+    flex-basis: 45%;
+    flex-direction: row;
+    margin-bottom: $tablet-indent;
+  }
+
+  .contacts-list__link {
+    width: 100%;
+  }
+}
