@@ -2,6 +2,10 @@
   margin-bottom: $mobile-indent;
 }
 
+.about__self-wrapper {
+  margin-bottom: $mobile-indent;
+}
+
 .about__img {
   display: block;
   width: 150px;
@@ -12,7 +16,6 @@
 
 .about__name {
   display: block;
-  margin-bottom: $mobile-indent;
   padding: 0 15px;
 
   font-weight: 500;
@@ -44,9 +47,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about__title {
+    margin-bottom: $tablet-indent;
+  }
+
   .about__text {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__self-wrapper {
+    float: left;
+    width: 150px;
+  }
+
+  .about__text {
+    margin-left: 200px;
+
+    text-align: left;
   }
 }

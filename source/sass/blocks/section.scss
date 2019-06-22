@@ -25,10 +25,16 @@
 
 @media (min-width: $tablet-width) {
   .section {
-    padding: 0 $tablet-indent $tablet-indent;
+    padding: $tablet-indent;
   }
 
   .section__title {
     font-size: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section {
+    padding-top: $tablet-indent;
   }
 }

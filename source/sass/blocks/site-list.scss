@@ -145,7 +145,10 @@
     }
 
     &:active {
+      padding-bottom: 3px;
+
       border-bottom: 2px solid $white;
+
       transition: border-bottom 0ms;
     }
   }

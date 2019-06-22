@@ -1,9 +1,36 @@
 .page-footer {
+  position: relative;
+
+  margin-top: 10px;
   padding: $mobile-indent;
+
+  background: linear-gradient(to left, #0b0b0b 0%, #0d0f12 100%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+
+    height: 100%;
+
+    background: inherit;
+    box-shadow: 0 -5px 18px rgba(0,0,0,0.8);
+    transform: skewY(-2deg);
+    transform-origin: left top;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     padding: $tablet-indent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    grid-area: footer;
   }
 }

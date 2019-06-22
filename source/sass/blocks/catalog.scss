@@ -12,13 +12,13 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  box-shadow: 5px -5px 0 0 $black, 110px -110px 0 -102px $white, -5px 5px 0 0 $black, -110px 110px 0 -102px $white;
 
   transition: background-position 7s;
 
   &:hover,
   &:focus {
     background-position: center bottom;
+    box-shadow: 0 0 10px 0 rgba($white, 0.5);
   }
 
   &--artactive {
@@ -112,5 +112,11 @@
   .catalog__item {
     flex-basis: 45%;
     margin-bottom: $tablet-indent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    flex-basis: 30%;
   }
 }

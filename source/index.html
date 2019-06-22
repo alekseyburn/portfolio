@@ -17,7 +17,8 @@
       <button class="main-nav__toggle" type="button" aria-label="Отобразить/закрыть меню"></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a class="site-list__link" href="#about" data-cont="О себе">О себе</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="#portfolio" data-cont="Мои работы">Мои работы</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#portfolio" data-cont="Мои работы">Мои работы</a>
+        </li>
         <li class="site-list__item"><a class="site-list__link" href="#contacts" data-cont="Контакты">Контакты</a></li>
       </ul>
     </nav>
@@ -25,15 +26,19 @@
   <main class="page-main">
     <section class="about section" id="about">
       <h2 class="about__title section__title">О себе</h2>
-      <picture>
-        <source type="image/webp" srcset="../img/img-avatar@1x.webp 1x, ../img/img-avatar@2x.webp 2x">
-        <img class="about__img" src="../img/img-avatar@1x.jpg" srcset="../img/img-avatar@2x.jpg 2x" alt="Аватарка">
-      </picture>
-      <b class="about__name">Алексей Коршаков</b>
+      <div class="about__self-wrapper">
+        <picture>
+          <source type="image/webp" srcset="../img/img-avatar@1x.webp 1x, ../img/img-avatar@2x.webp 2x">
+          <img class="about__img" src="../img/img-avatar@1x.jpg" srcset="../img/img-avatar@2x.jpg 2x" alt="Аватарка">
+        </picture>
+        <b class="about__name">Алексей Коршаков</b>
+      </div>
       <p class="about__text">Здравствуйте, я занимаюсь версткой адаптивных/отзывчивых сайтов: лендингов,
         интернет-магазинов и т.д. Увлекаюсь
         этим уже больше года, постоянно развиваясь и совершенствуясь. Имею высшее образование по специализации
-        "Инфокоммуникационные технологии и системы связи". Успешно закончил 2 курса html&css <a class="about__link" href="https://htmlacademy.ru/">HTML Academy</a>.</p>
+        "Инфокоммуникационные технологии и системы связи". Уровень владения английским языком - чтение технической
+        документации. Успешно закончил 2 курса html&css <a class="about__link" href="https://htmlacademy.ru/">HTML
+          Academy</a>.</p>
       <p class="about__text">Стараюсь придерживаться в коде чистоты и упорядоченности. Рутинные процессы автоматизирую с
         помощью сборщика Gulp (префиксы, создание svg-спрайта, минификация и т.д.). Верстаю с соблюдением валидности и
         доступности. Использую методологию БЭМ для быстрой и легкой разработки. Для ускорения написания стилизации
@@ -51,7 +56,8 @@
           <div class="catalog__info-wrapper">
             <h3 class="catalog__name">Artactive</h3>
             <p class="catalog__info">Лендинг для студии полигра&shy;фии и широкофор&shy;матной печати</p>
-            <p class="catalog__tech">Валидная, семантическая, доступная верстка, БЭМ, Адаптивная верстка, gulp, scss, Ретинизация и кадрирование изображений, Lazy Load, jQuery</p>
+            <p class="catalog__tech">Валидная, семантическая, доступная верстка, БЭМ, Адаптивная верстка, gulp, scss,
+              Ретинизация и кадрирование изображений, Lazy Load, jQuery</p>
             <p class="catalog__browsers">IE11, Edge, Chrome, Opera, Firefox</p>
             <a class="catalog__link button" href="https://github.com/alekseyburn/Artactive" target="_blank">Репозиторий</a>
             <a class="catalog__link button" href="https://alekseyburn.github.io/artactive_build/" target="_blank">Сайт</a>
@@ -62,12 +68,15 @@
           <div class="catalog__info-wrapper">
             <h3 class="catalog__name">Mishka</h3>
             <p class="catalog__info">Интернет-магазин игрушек ручной работы (3 страницы)</p>
-            <p class="catalog__tech">Валидная, семантическая, доступная верстка, БЭМ, Резиновая верстка, gulp, scss, Ретинизация и кадрирование изображений, js</p>
+            <p class="catalog__tech">Валидная, семантическая, доступная верстка, БЭМ, Резиновая верстка, gulp, scss,
+              Ретинизация и кадрирование изображений, js</p>
             <p class="catalog__browsers">IE11, Edge, Chrome, Opera, Firefox, Safari</p>
             <a class="catalog__link button" href="https://github.com/alekseyburn/838631-mishka-16" target="_blank">Репозиторий</a>
-            <a class="catalog__link button" href="https://alekseyburn.github.io/mishka_build/" target="_blank">Страница 1</a>
+            <a class="catalog__link button" href="https://alekseyburn.github.io/mishka_build/" target="_blank">Страница
+              1</a>
             <a class="catalog__link button" href="https://alekseyburn.github.io/mishka_build/catalog.html" target="_blank">Страница 2</a>
-            <a class="catalog__link button" href="https://alekseyburn.github.io/mishka_build/form.html" target="_blank">Страница 3</a>
+            <a class="catalog__link button" href="https://alekseyburn.github.io/mishka_build/form.html" target="_blank">Страница
+              3</a>
           </div>
         </li>
         <li class="catalog__item catalog__item--blueasy">
@@ -75,7 +84,8 @@
           <div class="catalog__info-wrapper">
             <h3 class="catalog__name">Blueasy</h3>
             <p class="catalog__info">Сайт-визитка фотографа John Doe</p>
-            <p class="catalog__tech">Валидная, семантическая, доступная, статическая верстка, кадрирование изображений, js</p>
+            <p class="catalog__tech">Валидная, семантическая, доступная, статическая верстка, кадрирование изображений,
+              js</p>
             <p class="catalog__browsers">Edge, Chrome, Opera, Firefox</p>
             <a class="catalog__link button" href="https://github.com/alekseyburn/blueasy" target="_blank">Репозиторий</a>
             <a class="catalog__link button" href="https://alekseyburn.github.io/blueasy/" target="_blank">Сайт</a>
@@ -88,19 +98,38 @@
   <footer class="page-footer" id="contacts">
     <ul class="page-footer__list contacts-list">
       <li class="contacts-list__item contacts-list__item--mail">
-        <svg class="contacts-list__icon" width="30" height="16"><use xlink:href="../img/sprite.svg#icon-email"></use></svg>E-mail:
+        <svg class="contacts-list__icon" width="30" height="16">
+          <use xlink:href="../img/sprite.svg#icon-email"></use>
+        </svg>
+        E-mail:
         <a class="contacts-list__link" href="mailto:alekseyburn@gmail.com">alekseyburn@gmail.com</a>
       </li>
       <li class="contacts-list__item contacts-list__item--phone">
-        <svg class="contacts-list__icon" width="30" height="16"><use xlink:href="../img/sprite.svg#icon-phone"></use></svg>Телефон:
+        <svg class="contacts-list__icon" width="30" height="16">
+          <use xlink:href="../img/sprite.svg#icon-phone"></use>
+        </svg>
+        Телефон:
         <a class="contacts-list__link" href="tel:89204488766">8-920-44-88-7-66</a>
       </li>
       <li class="contacts-list__item contacts-list__item--skype">
-        <svg class="contacts-list__icon" width="30" height="16"><use xlink:href="../img/sprite.svg#icon-skype"></use></svg>Skype:
+        <svg class="contacts-list__icon" width="30" height="16">
+          <use xlink:href="../img/sprite.svg#icon-skype"></use>
+        </svg>
+        Skype:
         <a class="contacts-list__link" href="skype:kopshak">kopshak</a>
       </li>
+      <li class="contacts-list__item contacts-list__item--telegram">
+        <svg class="contacts-list__icon" width="30" height="16">
+          <use xlink:href="../img/sprite.svg#icon-telegram"></use>
+        </svg>
+        Telegram:
+        <a class="contacts-list__link" href="https://t.me/alekseyburn">@alekseyburn</a>
+      </li>
       <li class="contacts-list__item contacts-list__item--address">
-        <svg class="contacts-list__icon" width="30" height="16"><use xlink:href="../img/sprite.svg#icon-address"></use></svg>Адрес:
+        <svg class="contacts-list__icon" width="30" height="16">
+          <use xlink:href="../img/sprite.svg#icon-address"></use>
+        </svg>
+        Адрес:
         <a class="contacts-list__link" href="https://yandex.ru/maps/23/murmansk/">Россия, г. Мурманск</a>
       </li>
     </ul>

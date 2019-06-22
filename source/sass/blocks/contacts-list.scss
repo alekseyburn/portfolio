@@ -49,3 +49,9 @@
     width: 100%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts-list__item {
+    flex-basis: auto;
+  }
+}

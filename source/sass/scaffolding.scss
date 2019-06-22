@@ -26,5 +26,15 @@ body {
   line-height: 20px;
   font-family: $font;
   color: $white;
-  background-color: $black;
+  background: linear-gradient(to right, #0b0b0b 0%, #0d0f12 100%);
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    display: grid;
+    grid-template-areas: "header header header"
+    ". main ."
+    "footer footer footer";
+    grid-template-columns: 1fr $desktop-width 1fr;
+  }
 }
