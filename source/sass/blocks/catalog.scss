@@ -21,6 +21,14 @@
     box-shadow: 0 0 10px 0 rgba($white, 0.5);
   }
 
+  &--yoga {
+    background-image: url("../img/bg-yoga@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-yoga@2x.jpg");
+    }
+  }
+
   &--artactive {
     background-image: url("../img/bg-artactive@1x.jpg");
 

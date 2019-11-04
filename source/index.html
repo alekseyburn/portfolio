@@ -40,17 +40,33 @@
         документации. Успешно закончил 2 курса html&css <a class="about__link" href="https://htmlacademy.ru/">HTML
           Academy</a>.</p>
       <p class="about__text">Стараюсь придерживаться в коде чистоты и упорядоченности. Рутинные процессы автоматизирую с
-        помощью сборщика Gulp (префиксы, создание svg-спрайта, минификация и т.д.). Верстаю с соблюдением валидности и
+        помощью сборщика Gulp (префиксы, создание svg-спрайта, минификация, извлечение критического CSS и т.д.). Верстаю
+        с соблюдением валидности и
         доступности. Использую методологию БЭМ для быстрой и легкой разработки. Для ускорения написания стилизации
-        использую препроцессор SCSS. Кроссбраузерность - IE11, Edge, Firefox, Chrome, Opera, Safari. Работа с
+        использую препроцессор SCSS. Кроссбраузерность - IE11, Edge, Firefox, Chrome, Opera, Safari. Оптимизирую
+        прогрессивные веб-метрики (First Contentful Paint (FCP), First Meaningful Paint (FMP), Time to Interactive
+        (TTI)) и работаю над общей производительностью сайта. Работа с
         изображениями в формате webp (для ie используется полифилл), ретинизация, адаптивность изображений. Владение js
-        на уровне написания простых скриптов (popup-формы, слайдер), подключение библиотек и их использование. Также
+        на уровне написания простых скриптов (popup-формы, слайдеры, валидации форм), подключение библиотек и их
+        использование, создание простых GSAP анимаций. Также
         использую git для хранения информации об изменениях в коде и lighthouse для выявления и устранения проблем
         производительности и доступности.</p>
     </section>
     <section class="last-works section" id="portfolio">
       <h2 class="last-works__title section__title">Последние работы</h2>
       <ul class="last-works__list catalog">
+        <li class="catalog__item catalog__item--yoga">
+          <button class="catalog__btn button">Информация</button>
+          <div class="catalog__info-wrapper">
+            <h3 class="catalog__name">Yoga</h3>
+            <p class="catalog__info">Лендинг для студии по занятию йогой</p>
+            <p class="catalog__tech">Валидная, семантическая, доступная, адаптивная верстка, БЭМ, gulp, scss,
+              Ретинизация и кадрирование изображений, Lazy Load, criticalCSS, GSAP, Custom form validation, JS</p>
+            <p class="catalog__browsers">IE11, Edge, Chrome, Opera, Firefox, Safari</p>
+            <a class="catalog__link button" href="https://github.com/alekseyburn/yoga" target="_blank" rel="noopener">Репозиторий</a>
+            <a class="catalog__link button" href="https://alekseyburn.github.io/yoga/" target="_blank" rel="noopener">Сайт</a>
+          </div>
+        </li>
         <li class="catalog__item catalog__item--artactive">
           <button class="catalog__btn button">Информация</button>
           <div class="catalog__info-wrapper">
@@ -59,8 +75,10 @@
             <p class="catalog__tech">Валидная, семантическая, доступная верстка, БЭМ, Адаптивная верстка, gulp, scss,
               Ретинизация и кадрирование изображений, Lazy Load, jQuery</p>
             <p class="catalog__browsers">IE11, Edge, Chrome, Opera, Firefox</p>
-            <a class="catalog__link button" href="https://github.com/alekseyburn/Artactive" target="_blank">Репозиторий</a>
-            <a class="catalog__link button" href="https://alekseyburn.github.io/artactive_build/" target="_blank">Сайт</a>
+            <a class="catalog__link button" href="https://github.com/alekseyburn/Artactive" target="_blank"
+               rel="noopener">Репозиторий</a>
+            <a class="catalog__link button" href="https://alekseyburn.github.io/artactive_build/" target="_blank"
+               rel="noopener">Сайт</a>
           </div>
         </li>
         <li class="catalog__item catalog__item--mishka">
@@ -71,11 +89,15 @@
             <p class="catalog__tech">Валидная, семантическая, доступная верстка, БЭМ, Резиновая верстка, gulp, scss,
               Ретинизация и кадрирование изображений, js</p>
             <p class="catalog__browsers">IE11, Edge, Chrome, Opera, Firefox, Safari</p>
-            <a class="catalog__link button" href="https://github.com/alekseyburn/838631-mishka-16" target="_blank">Репозиторий</a>
-            <a class="catalog__link button" href="https://alekseyburn.github.io/mishka_build/" target="_blank">Страница
+            <a class="catalog__link button" href="https://github.com/alekseyburn/838631-mishka-16" target="_blank"
+               rel="noopener">Репозиторий</a>
+            <a class="catalog__link button" href="https://alekseyburn.github.io/mishka_build/" target="_blank"
+               rel="noopener">Страница
               1</a>
-            <a class="catalog__link button" href="https://alekseyburn.github.io/mishka_build/catalog.html" target="_blank">Страница 2</a>
-            <a class="catalog__link button" href="https://alekseyburn.github.io/mishka_build/form.html" target="_blank">Страница
+            <a class="catalog__link button" href="https://alekseyburn.github.io/mishka_build/catalog.html"
+               target="_blank" rel="noopener">Страница 2</a>
+            <a class="catalog__link button" href="https://alekseyburn.github.io/mishka_build/form.html" target="_blank"
+               rel="noopener">Страница
               3</a>
           </div>
         </li>
@@ -87,12 +109,15 @@
             <p class="catalog__tech">Валидная, семантическая, доступная, статическая верстка, кадрирование изображений,
               js</p>
             <p class="catalog__browsers">Edge, Chrome, Opera, Firefox</p>
-            <a class="catalog__link button" href="https://github.com/alekseyburn/blueasy" target="_blank">Репозиторий</a>
-            <a class="catalog__link button" href="https://alekseyburn.github.io/blueasy/" target="_blank">Сайт</a>
+            <a class="catalog__link button" href="https://github.com/alekseyburn/blueasy" target="_blank"
+               rel="noopener">Репозиторий</a>
+            <a class="catalog__link button" href="https://alekseyburn.github.io/blueasy/" target="_blank"
+               rel="noopener">Сайт</a>
           </div>
         </li>
       </ul>
-      <a class="last-works__link button" href="https://github.com/alekseyburn" target="_blank">Остальные работы</a>
+      <a class="last-works__link button" href="https://github.com/alekseyburn" target="_blank" rel="noopener">Остальные
+        работы</a>
     </section>
   </main>
   <footer class="page-footer" id="contacts">
